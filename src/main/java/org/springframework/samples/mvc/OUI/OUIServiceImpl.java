@@ -7,13 +7,13 @@ import org.springframework.web.client.RestTemplate;
 public class OUIServiceImpl implements OUIService {
 
 	@Override
-	public String getOUIbyMAC() {
+	public String getOUIbyMAC(String mac) {
 		// TODO Auto-generated method stub
 
 		    final String uri = "https://api.macvendors.com/";
 		     
 		    RestTemplate restTemplate = new RestTemplate();
-		    String result = restTemplate.getForObject(uri + "/FC-A1-3E-2A-1C-33", String.class);
+		    String result = restTemplate.getForObject(uri + mac, String.class);
 		     
 		    System.out.println(result);
 		

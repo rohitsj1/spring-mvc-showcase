@@ -11,7 +11,7 @@ public class OUIManagerImpl implements OUIManager{
 	
 	@Override
 	public String getOUIbyMAC() {
-		return ouiDao.getOUIbyMAC();
+		return ouiDao.getOUIbyMAC("FC-A1-3E-2A-1C-33");
 		
 	}
 }
