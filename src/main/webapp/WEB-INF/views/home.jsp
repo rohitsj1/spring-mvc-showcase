@@ -46,6 +46,9 @@
 			<li>
 				<a id="simpleRevisited" class="textLink" href="<c:url value="/simple/revisited" />">GET /simple/revisited</a>
 			</li>
+			<li>
+				<a id="OUILookup" class="textLink" href="<c:url value="OUI" />">GET /OUI</a>
+			</li>
 		</ul>
 	</div>
 	<div id="mapping">
